@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.slide-show {
+  /* position: relative; */
+  margin: 1.1rem auto;
+}
+
+.box {
+  height: 80vh;
+  position: relative;
+  /* background-color: rgb(14, 13, 43); */
+  background-color: #000;
+  overflow: hidden;
+}
+
+.box > div > img {
+  width: 100%;
+  height: 100vh;
+}
+
+.box .slide-show2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.box .slide-show2 div:nth-child(2) {
+  text-align: right;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.video video {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.overlay {
+  height: 80vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  /* background: #225470; */
+  background: #000;
+  opacity: 0.1;
+  /* z-index: 1; */
+}
+
+.content-box {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  color: #fff;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.box .zoom-inout > img {
+  overflow: hidden;
+  /* animation: zoom 100s ease; */
+  animation-name: zoom;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.content-box p {
+  font-size: 35px;
+  margin-bottom: 0;
+  /* font-family: "Fondamento", cursive; */
+  font-family: "Galada", cursive;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 750px) {
+  .slide-show {
+    margin: 5rem auto;
+  }
+
+  .box {
+    height: 90vh;
+  }
+  .video {
+    height: 90vh;
+  }
+
+  .content-box p {
+    font-size: 22px;
+    letter-spacing: 0;
+  }
+
+  .box .slide4 > img {
+    width: 150vw;
+  }
+}
