@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import SlideShows from "./homePageComponents/SlideShows";
 import "./HomePageInner.css";
+import Services from "./homePageComponents/Services";
 
 class HomePageInner extends Component {
   render() {
@@ -8,6 +9,7 @@ class HomePageInner extends Component {
       <div className="home-inner">
         <h1></h1>
         <SlideShows />
+        <Services />
       </div>
     );
   }

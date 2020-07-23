@@ -1,0 +1,131 @@
+.services {
+  margin: 3rem auto;
+  /* position: relative; */
+  /* top: -20px; */
+  padding: 2rem;
+}
+
+.services h1 {
+  text-align: center;
+  text-decoration: underline;
+  font-style: italic;
+  font-weight: 600;
+  color: #777;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  /* font-style: none; */
+}
+.serviceBox {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  padding: 15px 20px 25px;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  margin: 1rem 0.8rem 0;
+  height: 330px;
+  border: none;
+  outline: none;
+}
+.serviceBox:before,
+.serviceBox:after {
+  content: "";
+  background: linear-gradient(#da75e5, #da75e5, #7131bf, #7131bf);
+  height: 900px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  left: 2px;
+  right: 2px;
+  top: 50%;
+  z-index: -1;
+  border: none;
+  outline: none;
+}
+.serviceBox:after {
+  background: #fff;
+  border-radius: 0;
+  border: none;
+
+  height: 100%;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.6);
+  transform: translateY(0);
+  top: 0;
+  left: 10px;
+  right: 10px;
+}
+.serviceBox .service-icon {
+  border: none;
+  /* font-size: 0px; */
+  background: linear-gradient(#da75e5, #7131bf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.serviceBox .service-icon span {
+  width: 10px;
+  height: 10px;
+  /* border-radius: 50%; */
+  overflow: hidden;
+  align-items: center;
+}
+.serviceBox .service-icon span img {
+  width: 100%;
+  height: 115px;
+}
+.serviceBox .service-icon:after {
+  content: "";
+  background-color: #e7e7e7;
+  height: 4px;
+  width: 20px;
+  margin: 0 auto 15px;
+  border-radius: 5px;
+  display: block;
+  clear: both;
+}
+.serviceBox .title {
+  color: #555;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+}
+.serviceBox .description {
+  color: #777;
+  /* text-align: left; */
+  font-size: 13px;
+  line-height: 24px;
+  margin: 0 10px;
+}
+.serviceBox.blue:before {
+  background: linear-gradient(#4ae2d6, #4ae2d6, #00b5e2, #00b5e2);
+}
+.serviceBox.blue .service-icon {
+  background: linear-gradient(#4ae2d6, #00b5e2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.serviceBox.yellow:before {
+  background: linear-gradient(#ffd747, #ffd747, #ff6905, #ff6905);
+}
+.serviceBox.yellow .service-icon {
+  background: linear-gradient(#ffd747, #ff6905);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.serviceBox.darkblue:before {
+  background: linear-gradient(#70def9, #70def9, #8370ff, #8370ff);
+}
+.serviceBox.darkblue .service-icon {
+  background: linear-gradient(#70def9, #8370ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media only screen and (max-width: 990px) {
+  .serviceBox {
+    margin: 0 0 30px;
+  }
+}

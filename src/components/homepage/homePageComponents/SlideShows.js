@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 import "./SlideShows.css";
-import video from "../../../images/video1.mp4";
+import video3 from "../../../images/video3.mp4";
 import slide16 from "../../../images/slide16.jpeg";
 import slide15 from "../../../images/slide15.jpeg";
 import slide12 from "../../../images/slide12.mp4";
@@ -9,7 +9,7 @@ import slide12 from "../../../images/slide12.mp4";
 export default class SlideShows extends Component {
   render() {
     var settings = {
-      dots: false,
+      dots: true,
       infinite: true,
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -22,7 +22,7 @@ export default class SlideShows extends Component {
         <Slider {...settings}>
           <div className="box">
             <div className="video">
-              <video src={video} autoPlay="true" loop="true"></video>
+              <video src={video3} autoPlay="true" loop="true"></video>
             </div>
             <div className="overlay"></div>
             <div className="content-box">

@@ -16,7 +16,7 @@ class NavbarHome extends Component {
               <div>
                 <ul>
                   <li>
-                    <a href="#">Home</a>
+                    <a href="/">Home</a>
                   </li>
                   <li>
                     <a href="#">About Us</a>
@@ -46,7 +46,9 @@ class NavbarHome extends Component {
         </div>
         <div className="navbar-desktop">
           <div className="logo">
-            <img src={imgLogo} />
+            <a href="/">
+              <img src={imgLogo} />
+            </a>
           </div>
           <div className="content">
             <ul>
