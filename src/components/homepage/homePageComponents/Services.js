@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import "./Services.css";
 import Slider from "react-slick";
-import devops from "../../../images/devops.jpeg";
-import uiux from "../../../images/ui-ux.jpeg";
-import terraform from "../../../images/terraform1.jpeg";
-import technology from "../../../images/technology.jpeg";
-import cloud from "../../../images/cloud2.jpeg";
-import microsoft from "../../../images/microsoft.jpeg";
+// import devops from "../../../images/devops.jpeg";
+// import uiux from "../../../images/ui-ux.jpeg";
+import terraform from "../../../images/cybersecuritylogo.jpeg";
+import technology from "../../../images/agilelogo.jpeg";
+import cloud from "../../../images/softwaredeliverylogo.jpeg";
+import microsoft from "../../../images/digitalservicelogo.jpeg";
 
 class Services extends Component {
   render() {
@@ -61,14 +61,14 @@ class Services extends Component {
     };
     return (
       <div className="services">
-        <h1>Services</h1>
+        <h1>What we do?</h1>
         <div>
           <div className="container">
             {/* <div class="row"> */}
             <Slider {...settings}>
               <div className="">
                 <div className="serviceBox">
-                  <a href="technology">
+                  <a href="agiletransformation">
                     <div className="service-icon">
                       <span>
                         {/* <i className="fa fa-globe"></i> */}
@@ -76,7 +76,7 @@ class Services extends Component {
                       </span>
                     </div>
                   </a>
-                  <h3 className="title">Technology Services</h3>
+                  <h3 className="title">Agile Transformation</h3>
                   <p className="description">
                     Collaborate delivers high value, cost effective enterprise
                     applications and customized solutions that enable
@@ -86,7 +86,7 @@ class Services extends Component {
               </div>
               <div className="">
                 <div className="serviceBox blue">
-                  <a href="/cloud">
+                  <a href="/softwaredelivery">
                     <div className="service-icon">
                       <span>
                         {/* <i className="fa fa-rocket"></i> */}
@@ -94,7 +94,7 @@ class Services extends Component {
                       </span>
                     </div>
                   </a>
-                  <h3 className="title">Cloud</h3>
+                  <h3 className="title">Software Delivery</h3>
                   <p className="description">
                     Combining Deep Expertise In OpenStack, databases and data
                     processing with analytics solutions.
@@ -103,7 +103,7 @@ class Services extends Component {
               </div>
               <div className="">
                 <div className="serviceBox">
-                  <a href="/terraform">
+                  <a href="/cybersecurity">
                     <div className="service-icon">
                       <span>
                         {/* <i className="fa fa-globe"></i> */}
@@ -111,7 +111,7 @@ class Services extends Component {
                       </span>
                     </div>
                   </a>
-                  <h3 className="title">Terraform</h3>
+                  <h3 className="title">Cyber Security</h3>
                   <p className="description">
                     Collaborate works in partnership with customers, leveraging
                     significant experience to deliver on the promise of SAP
@@ -121,7 +121,7 @@ class Services extends Component {
               </div>
               <div className="">
                 <div className="serviceBox blue">
-                  <a href="/microsoft">
+                  <a href="/digitalservices">
                     <div className="service-icon">
                       <span>
                         {/* <i className="fa fa-rocket"></i> */}
@@ -129,7 +129,7 @@ class Services extends Component {
                       </span>
                     </div>
                   </a>
-                  <h3 className="title">Microsoft COE</h3>
+                  <h3 className="title">Digital Services</h3>
                   <p className="description">
                     Our team boasts technologists with expertise in a wide array
                     of Microsoft tools and can deliver competent Custom
@@ -137,12 +137,12 @@ class Services extends Component {
                   </p>
                 </div>
               </div>
-              <div className="">
+              {/* <div className="">
                 <div className="serviceBox">
                   <a href="uxui">
                     <div className="service-icon">
                       <span>
-                        {/* <i className="fa fa-globe"></i> */}
+                        <i className="fa fa-globe"></i>
                         <img src={uiux} />
                       </span>
                     </div>
@@ -155,13 +155,13 @@ class Services extends Component {
                     achieve roadmaps.
                   </p>
                 </div>
-              </div>
-              <div className="">
+              </div> */}
+              {/* <div className="">
                 <div className="serviceBox blue">
                   <a href="devops">
                     <div className="service-icon">
                       <span>
-                        {/* <i className="fa fa-rocket"></i> */}
+                        <i className="fa fa-rocket"></i>
                         <img src={devops} />
                       </span>
                     </div>
@@ -173,7 +173,7 @@ class Services extends Component {
                     opportunities for growth.
                   </p>
                 </div>
-              </div>
+              </div> */}
             </Slider>
             {/* </div> */}
           </div>

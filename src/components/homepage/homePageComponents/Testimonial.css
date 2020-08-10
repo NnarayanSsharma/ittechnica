@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Recursive:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Recursive:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.testimonial-box {
+  position: relative;
+  height: 70vh;
+}
+
+.testimonial-box h2 {
+  position: absolute;
+  top: 0px;
+  left: 36%;
+  z-index: 1;
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Recursive", sans-serif;
+  font-family: "Libre Baskerville", serif;
+  margin-top: 1rem;
+  color: #eee;
+}
+.testimonial-box .image {
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+  background: #000;
+  opacity: 0.9;
+}
+
+.testimonial-box img {
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+}
+
+.testimonial-box .testimonial-content {
+  position: absolute;
+  top: 120px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+  text-align: center;
+  color: #222;
+  font-weight: 500;
+  font-family: "Recursive", sans-serif;
+  padding: 1rem;
+}
+
+.testimonial-box .testimonial-content div {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1rem;
+}
+
+.testimonial-box .testimonial-content h3 {
+  font-weight: 600;
+}
+
+.testimonial-box .testimonial-content h4 {
+  font-size: 17px;
+  color: #333;
+}
+
+.testimonial-box .testimonial-content i {
+  color: royalblue;
+  font-size: 20px;
+  margin-bottom: 1rem;
+}

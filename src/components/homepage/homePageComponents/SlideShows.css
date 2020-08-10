@@ -9,7 +9,7 @@
 }
 
 .box {
-  height: 80vh;
+  height: 100vh;
   position: relative;
   /* background-color: rgb(14, 13, 43); */
   background-color: #000;
@@ -35,7 +35,7 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 80vh;
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -45,9 +45,9 @@
 }
 
 .overlay {
-  height: 80vh;
+  height: 100vh;
   position: absolute;
-  top: 0;
+  top: -10px;
   left: 0;
   width: 100vw;
   /* background: #225470; */

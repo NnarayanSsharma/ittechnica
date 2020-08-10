@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Spring } from "react-spring";
 import Slider from "react-slick";
 import "./SlideShows.css";
 import video3 from "../../../images/video3.mp4";
@@ -25,7 +26,14 @@ export default class SlideShows extends Component {
               <video src={video3} autoPlay="true" loop="true"></video>
             </div>
             <div className="overlay"></div>
-            <div className="content-box">
+
+            <div
+              className="content-box"
+              data-aos="fade-right"
+              data-aos-once="true"
+              // data-aos-delay="50"
+              // data-aos-offset="200"
+            >
               <p>Ittechnica helps you achieve more and,</p>{" "}
               <p>aim higher giving you the freedom</p>
             </div>
@@ -34,7 +42,13 @@ export default class SlideShows extends Component {
             <div className="zoom-inout">
               <img src={slide15} />
             </div>
-            <div className="content-box">
+            <div
+              className="content-box"
+              data-aos="fade-right"
+              data-aos-once="true"
+              // data-aos-delay="50"
+              // data-aos-offset="200"
+            >
               <p>Work anywhere and everywhere</p> <p>with Ittechnica</p>
             </div>
           </div>
@@ -43,7 +57,13 @@ export default class SlideShows extends Component {
             <div className="video">
               <video src={slide12} autoPlay="true" loop="true"></video>
             </div>
-            <div className="content-box">
+            <div
+              className="content-box"
+              data-aos="fade-right"
+              data-aos-once="true"
+              // data-aos-delay="50"
+              // data-aos-offset="200"
+            >
               <p>We help you reach the top</p> <p>and stay on top.</p>
             </div>
           </div>
@@ -51,7 +71,13 @@ export default class SlideShows extends Component {
             <div className="slide4">
               <img src={slide16} />
             </div>
-            <div className="content-box">
+            <div
+              className="content-box"
+              data-aos="fade-right"
+              data-aos-once="true"
+              // data-aos-delay="50"
+              // data-aos-offset="200"
+            >
               <p>We take extra care for your </p> <p>golden career</p>
             </div>
           </div>
