@@ -8,6 +8,7 @@ import AgileTransformation from "./services/AgileTransformation";
 import SoftwareDelivery from "./services/SoftwareDelivery";
 import CyberSecurity from "./services/CyberSecurity";
 import WeAreBest from "./homepage/homePageComponents/WeAreBest";
+import CareerHome from "./career/CareerHome";
 
 export class Menu extends Component {
   render() {
@@ -27,6 +28,7 @@ export class Menu extends Component {
           <Route exact path="/devops" component={Devops} /> */}
           <Route exact path="/cybersecurity" component={CyberSecurity} />
           <Route exact path="/wearebest" component={WeAreBest} />
+          <Route exact path="/careerhome" component={CareerHome} />
         </Switch>
         <Footer />
       </div>

@@ -130,7 +130,7 @@
 .agile-transformation > div .agile-link a:hover {
   transform: scale(1.05);
   color: #fff;
-  text-shadow: ;
+  /* text-shadow: ; */
 }
 .agile-transformation button {
   padding: 0.5rem 1.5rem;
@@ -279,7 +279,7 @@
 .software-delivery > div .agile-link a:hover {
   transform: scale(1.05);
   color: #fff;
-  text-shadow: ;
+  /* text-shadow: ; */
 }
 .software-delivery button {
   padding: 0.5rem 1.5rem;
@@ -423,7 +423,7 @@
 .cyber-security > div .agile-link a:hover {
   transform: scale(1.05);
   color: #fff;
-  text-shadow: ;
+  /* text-shadow: ; */
 }
 .cyber-security button {
   padding: 0.5rem 1.5rem;
@@ -563,7 +563,7 @@
 .digital-services > div .agile-link a:hover {
   transform: scale(1.1);
   color: #fff;
-  text-shadow: ;
+  /* text-shadow: ; */
 }
 
 .digital-services button {

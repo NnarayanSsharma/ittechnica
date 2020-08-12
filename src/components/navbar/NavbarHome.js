@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./NavbarHome.css";
 import imgLogo from "../../images/ITtechnica-header.jpeg";
+import { Link } from "react-router-dom";
 
 class NavbarHome extends Component {
   render() {
@@ -68,7 +69,8 @@ class NavbarHome extends Component {
                 <a href="#">Clients</a>
               </li>
               <li>
-                <a href="#">Careers</a>
+                <Link to="careerhome">Careers</Link>
+                {/* <a href="#">Careers</a> */}
               </li>
               <li>
                 <a href="#">Blog</a>
