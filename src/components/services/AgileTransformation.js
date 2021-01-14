@@ -2,8 +2,23 @@ import React, { Component } from "react";
 import "./WhatWeDo.css";
 import { Link } from "react-router-dom";
 import agileimg from "../../images/agile1.jpeg";
+import axios from "axios"
 
 class AgileTransformation extends Component {
+  // componentDidMount(){
+  //   axios.post('http://backend.softnetworld.in/createTeacher', {
+  //     email: 'Fred',
+  //     password: '123456'
+  //   })
+  //   .then(function (response) {
+  //     console.log("response");
+  //     console.log(response);
+  //   })
+  //   .catch(function (error) {
+  //     console.log("error")
+  //     console.log(error);
+  //   });
+  // }
   render() {
     return (
       <div className="agile-transformation">

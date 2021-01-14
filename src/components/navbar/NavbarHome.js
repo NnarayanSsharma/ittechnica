@@ -17,28 +17,31 @@ class NavbarHome extends Component {
               <div>
                 <ul>
                   <li>
-                    <a href="/">Home</a>
+                    <a href="#"></a>
                   </li>
                   <li>
-                    <a href="#">About Us</a>
+                    <Link to="/">Home</Link>
+
                   </li>
                   <li>
+                    <Link to="/aboutus">About Us</Link>
+                  </li>
+                  {/* <li>
                     <a href="#">Products</a>
-                  </li>
+                  </li> */}
                   <li>
-                    <a href="#">Services</a>
+                    {/* <a href="#">Services</a> */}
+                    <Link to="/agilesoftwaredevelopment">Services</Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <a href="#">Clients</a>
-                  </li>
+                  </li> */}
                   <li>
-                    <a href="#">Careers</a>
+                    <Link to="/careerhome">Careers</Link>
                   </li>
+
                   <li>
-                    <a href="#">Blog</a>
-                  </li>
-                  <li>
-                    <a href="#">Contact Us</a>
+                    <Link to="/contactus">Contact Us</Link>
                   </li>
                 </ul>
               </div>
@@ -54,29 +57,34 @@ class NavbarHome extends Component {
           <div className="content">
             <ul>
               <li>
-                <a href="#">Home</a>
+                <a href="#"></a>
               </li>
               <li>
-                <a href="#">About Us</a>
+                <a href="#"></a>
               </li>
               <li>
+                <Link to="/aboutus">
+                  About Us
+                </Link>
+                {/* <a href="#"></a> */}
+              </li>
+              {/* <li>
                 <a href="#">Products</a>
-              </li>
+              </li> */}
               <li>
-                <a href="#">Services</a>
+                {/* <a href="#">Services</a> */}
+                <Link to="/agilesoftwaredevelopment">Services</Link>
               </li>
-              <li>
+              {/* <li>
                 <a href="#">Clients</a>
-              </li>
+              </li> */}
               <li>
-                <Link to="careerhome">Careers</Link>
+                <Link to="/careerhome">Careers</Link>
                 {/* <a href="#">Careers</a> */}
               </li>
+              
               <li>
-                <a href="#">Blog</a>
-              </li>
-              <li>
-                <a href="#">Contact Us</a>
+                <Link to="/contactus">Contact Us</Link>
               </li>
             </ul>
           </div>

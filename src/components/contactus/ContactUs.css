@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Recursive:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contact-us {
+  margin-top: 4rem;
+}
+
+.contact-us > div {
+  /* width: 80%; */
+  /* margin: 0 auto; */
+}
+
+.contact-us > div > div:nth-child(1) {
+  background: rgb(58, 127, 255);
+}
+
+.contact-us > div h1 {
+  /* border: 1px red solid; */
+  width: 75%;
+  margin: 0 auto;
+  padding: 6rem 0;
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 600;
+  font-family: sans-serif;
+  /* font-family: "Roboto Mono", monospace; */
+}
+
+.contact-us > div > div:nth-child(2) {
+  position: relative;
+  top: -45px;
+  background: #fff;
+  width: 75%;
+  margin: 0 auto;
+  padding: 3rem;
+}
+
+.contact-us > div > div > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.contact-us > div > div:nth-child(2) > h2 > p {
+  text-align: center;
+  margin-top: 0;
+  /* border: solid red 1px; */
+  /* font-family: "Roboto Mono", monospace; */
+  /* font-family: sans-serif; */
+  font-family: "Libre Baskerville", serif;
+}
+
+.contact-us > div > div:nth-child(2) > div > div:nth-child(1) > h3 {
+  margin-top: 3rem;
+  font-family: sans-serif;
+}
+
+.contact-us > div > div:nth-child(2) > div > div:nth-child(1) p {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  /* font-family: sans-serif; */
+  font-family: "Libre Baskerville", serif;
+}
+
+.contact-us > div > div:nth-child(2) > div > div:nth-child(1) > div {
+  margin-top: 2rem;
+}
+
+.contact-us > div > div:nth-child(2) > div > div:nth-child(2) {
+  margin-top: 3rem;
+}
+
+@media (max-width: 750px) {
+  .contact-us > div > div:nth-child(2) > h2 > p {
+    font-size: 1.2rem;
+  }
+  .contact-us > div > div > div {
+    display: block;
+  }
+  .contact-us > div > div > div > div:nth-child(1) {
+    border-bottom: 1px solid rgb(238, 238, 238);
+  }
+  .contact-us > div > div:nth-child(2) {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1.8rem 0.2rem;
+    overflow: hidden;
+  }
+}

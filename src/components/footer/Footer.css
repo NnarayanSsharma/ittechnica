@@ -1,7 +1,6 @@
 .footer-container {
   background-color: #eee;
   padding: 0.8rem 0;
-  width: ;
 }
 .footer {
   position: relative;
@@ -16,7 +15,6 @@
 .footer .div-1 {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  /* text-align: left; */
   padding-bottom: 2rem;
   border-bottom: 1px solid #000;
 }
@@ -31,7 +29,13 @@
 }
 
 .footer .div-1 div:nth-child(1) p {
+  font-family: "Libre Baskerville", serif;
   margin-bottom: 1rem;
+}
+
+.footer .div-1 div:nth-child(1) p a {
+  text-decoration: none;
+  color: #333;
 }
 
 .footer .div-1 div:nth-child(1) div.social-icon i {
@@ -48,10 +52,32 @@
   margin-bottom: 0.8rem;
 }
 
+.footer .div-1 div:nth-child(2) h3:hover,
+.footer .div-1 div:nth-child(3) h3:hover,
+.footer .div-1 div:nth-child(4) h3:hover {
+  font-size: 1.8rem;
+  color: #333;
+}
+
 .footer .div-1 div:nth-child(2) p,
 .footer .div-1 div:nth-child(3) p,
 .footer .div-1 div:nth-child(4) p {
   font-size: 13px;
+  font-family: "Libre Baskerville", serif;
+}
+
+.footer .div-1 div:nth-child(2) p a,
+.footer .div-1 div:nth-child(3) p a,
+.footer .div-1 div:nth-child(4) p a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer .div-1 div:nth-child(2) h3 a,
+.footer .div-1 div:nth-child(3) h3 a,
+.footer .div-1 div:nth-child(4) h3 a {
+  text-decoration: none;
+  color: #333;
 }
 
 .footer .div-2 p {

@@ -171,7 +171,7 @@
 
 .navbar-desktop .content > ul {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(6, 1fr);
 }
 
 .navbar-desktop .content > ul > li {
@@ -184,11 +184,22 @@
 
 .navbar-desktop .content > ul > li > a {
   color: #333;
-  /* color: #fff; */
   font-weight: 600;
   letter-spacing: 2px;
   font-family: "Mulish", sans-serif;
 }
+
+.navbar-desktop .content > ul > li > a:hover {
+  font-size: 1.12rem;
+  font-weight: 700;
+}
+
+/* animation */
+.navbar-desktop .content .animation {
+  position: relative;
+  background: rgba(255, 255, 255, 1);
+}
+
 @media (max-width: 750px) {
   .menu-wrap .hamburger {
     visibility: visible;
@@ -204,7 +215,7 @@
     width: 100%;
     height: 100%;
     position: relative;
-    top: -70px;
+    top: -67px;
   }
   .navbar-desktop .logo {
     width: 170px;

@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Recursive:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +10,10 @@
 .agile-transformation {
   margin: 4rem auto;
   /* text-align: center; */
+}
+
+.agile-transformation p {
+  font-family: "Libre Baskerville", serif;
 }
 
 .agile-transformation h1 {
@@ -72,7 +77,8 @@
 }
 
 .agile-transformation > div .agile-content p {
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: "Libre Baskerville", serif;
   text-align: justify;
   /* color: #000; */
 }
@@ -225,7 +231,8 @@
 }
 
 .software-delivery > div .software-delivery-content p {
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: "Libre Baskerville", serif;
   text-align: justify;
   /* color: #000; */
 }
@@ -510,7 +517,8 @@
 }
 
 .digital-services > div .digital-services-content p {
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: "Libre Baskerville", serif;
   text-align: justify;
   /* color: #000; */
 }
@@ -587,4 +595,56 @@
   /* color: white; */
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media (max-width: 750px) {
+  .digital-services,
+  .cyber-security,
+  .agile-transformation,
+  .software-delivery {
+    position: relative;
+    top: 5px;
+  }
+
+  .digital-services h1,
+  .cyber-security h1,
+  .agile-transformation h1,
+  .software-delivery h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  .digital-services > div:nth-child(2),
+  .cyber-security > div:nth-child(2),
+  .agile-transformation > div:nth-child(2),
+  .software-delivery > div:nth-child(2) {
+    width: 100%;
+  }
+  .digital-services > div .agile-link,
+  .cyber-security > div .agile-link,
+  .agile-transformation > div .agile-link,
+  .software-delivery > div .agile-link {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: auto;
+  }
+
+  .digital-services > div .agile-link ul,
+  .cyber-security > div .agile-link ul,
+  .agile-transformation > div .agile-link ul,
+  .software-delivery > div .agile-link ul {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+
+  .digital-services > div .digital-services-content .image,
+  .agile-transformation > div .agile-content .image,
+  .software-delivery > div .software-delivery-content .image,
+  .cyber-security > div .cyber-security-content .image {
+    height: 100%;
+  }
 }

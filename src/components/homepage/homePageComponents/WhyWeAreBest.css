@@ -89,7 +89,7 @@
   font-size: 5rem;
   font-weight: 600;
   font-style: italic;
-  color: #777;
+  color: #666;
   text-decoration: underline;
 }
 
@@ -154,6 +154,15 @@
 }
 
 @media (max-width: 750px) {
+  .we-are-best > div > div div:nth-child(1) {
+    font-size: 25px;
+  }
+
+  .we-are-best > div button {
+    width: 80%;
+    padding: 0.3rem 0.6rem;
+  }
+
   .wearebest {
     margin: 0 auto;
     width: 90%;

@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "./Services.css";
 import Slider from "react-slick";
+import { Link } from "react-router-dom";
+
 // import devops from "../../../images/devops.jpeg";
 // import uiux from "../../../images/ui-ux.jpeg";
 import terraform from "../../../images/cybersecuritylogo.jpeg";
@@ -10,7 +12,7 @@ import microsoft from "../../../images/digitalservicelogo.jpeg";
 
 class Services extends Component {
   render() {
-    var settings = {
+    let settings = {
       //   dots: true,
       infinite: false,
       speed: 500,
@@ -68,14 +70,14 @@ class Services extends Component {
             <Slider {...settings}>
               <div className="">
                 <div className="serviceBox">
-                  <a href="agiletransformation">
+                  <Link to="agiletransformation">
                     <div className="service-icon">
                       <span>
                         {/* <i className="fa fa-globe"></i> */}
                         <img src={technology} />
                       </span>
                     </div>
-                  </a>
+                  </Link>
                   <h3 className="title">Agile Transformation</h3>
                   <p className="description">
                     Collaborate delivers high value, cost effective enterprise
@@ -86,14 +88,14 @@ class Services extends Component {
               </div>
               <div className="">
                 <div className="serviceBox blue">
-                  <a href="/softwaredelivery">
+                  <Link to="/softwaredelivery">
                     <div className="service-icon">
                       <span>
                         {/* <i className="fa fa-rocket"></i> */}
                         <img src={cloud} />
                       </span>
                     </div>
-                  </a>
+                  </Link>
                   <h3 className="title">Software Delivery</h3>
                   <p className="description">
                     Combining Deep Expertise In OpenStack, databases and data
@@ -103,14 +105,14 @@ class Services extends Component {
               </div>
               <div className="">
                 <div className="serviceBox">
-                  <a href="/cybersecurity">
+                  <Link to="/cybersecurity">
                     <div className="service-icon">
                       <span>
                         {/* <i className="fa fa-globe"></i> */}
                         <img src={terraform} />
                       </span>
                     </div>
-                  </a>
+                  </Link>
                   <h3 className="title">Cyber Security</h3>
                   <p className="description">
                     Collaborate works in partnership with customers, leveraging
@@ -121,14 +123,14 @@ class Services extends Component {
               </div>
               <div className="">
                 <div className="serviceBox blue">
-                  <a href="/digitalservices">
+                  <Link to="/digitalservices">
                     <div className="service-icon">
                       <span>
                         {/* <i className="fa fa-rocket"></i> */}
                         <img src={microsoft} />
                       </span>
                     </div>
-                  </a>
+                  </Link>
                   <h3 className="title">Digital Services</h3>
                   <p className="description">
                     Our team boasts technologists with expertise in a wide array
