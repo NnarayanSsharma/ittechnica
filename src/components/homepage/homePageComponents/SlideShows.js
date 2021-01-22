@@ -18,6 +18,7 @@ import image7 from "../../../images/image7.jpg"
 import image5 from "../../../images/image5.jpg"
 import image8 from "../../../images/image8.jpg"
 import v26975 from "../../../images/26975.jpg"
+import { motion } from "framer-motion"
 
 
 export default class SlideShows extends Component {
@@ -33,76 +34,74 @@ export default class SlideShows extends Component {
     };
     return (
       <div className="slide-show">
+        {/* <div>
+          <div>
+            <video src={video3} autoPlay="true" loop="true"></video>
+          </div>
+          <motion.div
+              className="content-box1"
+              initial={{x: "-100vw"}}
+              animate={{x: 0}}
+          >
+            <p>Ittechnica helps you achieve more and,</p>{" "}
+            <p>aim higher giving you the freedom</p>
+          </motion.div>
+        </div> */}
+        
         <Slider {...settings}>
           <div className="box">
             <div className="video">
-              {/* <video src={video3} autoPlay="true" loop="true"></video> */}
-              {/* <img src={image8} /> */}
-              {/* <img src={banner3} /> */}
-              <img src={v26975} />
+              {/* <img src={v26975} /> */}
+              <video src={video3} autoPlay="true" loop="true"></video>
             </div>
             <div className="overlay"></div>
 
-            <div
+            <motion.div
               className="content-box"
-              data-aos="fade-right"
-              data-aos-once="true"
-              // data-aos-delay="50"
-              // data-aos-offset="200"
+              initial={{x: "-100vw"}}
+              animate={{x: 0}}
+              transition={{delay: 0.3, type: 'spring', stiffness: 120}}
             >
               <p>Ittechnica helps you achieve more and,</p>{" "}
               <p>aim higher giving you the freedom</p>
-            </div>
+            </motion.div>
           </div>
-          <div className="box">
-            {/* <div className="zoom-inout"> */}
+          {/* <div className="box">
             <div>
-
-              {/* <img src={slide15} /> */}
-              {/* <img src={image7} /> */}
               <img src={banner5} />
             </div>
             <div
               className="content-box"
               data-aos="fade-right"
               data-aos-once="true"
-              // data-aos-delay="50"
-              // data-aos-offset="200"
             >
               <p>Work anywhere and everywhere</p> <p>with Ittechnica</p>
             </div>
-          </div>
-          <div className="box">
-            {/* <div><img src={} /></div> */}
+          </div> */}
+          {/* <div className="box">
             <div className="video">
-              {/* <video src={slide12} autoPlay="true" loop="true"></video> */}
               <img src={banner6} />
             </div>
             <div
               className="content-box"
               data-aos="fade-right"
               data-aos-once="true"
-              // data-aos-delay="50"
-              // data-aos-offset="200"
             >
               <p>We help you reach the top</p> <p>and stay on top.</p>
             </div>
-          </div>
-          <div className="box">
+          </div> */}
+          {/* <div className="box">
             <div className="slide4">
-              {/* <img src={slide16} /> */}
               <img src={banner4} />
             </div>
             <div
               className="content-box"
               data-aos="fade-right"
               data-aos-once="true"
-              // data-aos-delay="50"
-              // data-aos-offset="200"
             >
               <p>We take extra care for your </p> <p>golden career</p>
             </div>
-          </div>
+          </div> */}
         </Slider>
       </div>
     );

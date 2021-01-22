@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import "./NavbarHome.css";
 import imgLogo from "../../images/ITtechnica-header.jpeg";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion"
+
 
 class NavbarHome extends Component {
   render() {
@@ -54,7 +56,11 @@ class NavbarHome extends Component {
               <img src={imgLogo} />
             </a>
           </div>
-          <div className="content">
+          <motion.div className="content"
+            initial={{y: -250}}
+            animate={{y: 0}}
+            transition={{delay: 0.2, type: 'spring', stiffness: 100}}
+          >
             <ul>
               <li>
                 <a href="#"></a>
@@ -87,7 +93,7 @@ class NavbarHome extends Component {
                 <Link to="/contactus">Contact Us</Link>
               </li>
             </ul>
-          </div>
+          </motion.div>
         </div>
       </div>
     );

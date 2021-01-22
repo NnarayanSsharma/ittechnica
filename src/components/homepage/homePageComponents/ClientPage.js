@@ -14,7 +14,7 @@ import logo10 from "../../../images/logos/logo10.png";
 import logo11 from "../../../images/logos/logo11.jpg";
 import logo12 from "../../../images/logos/logo12.jpg";
 import logo15 from "../../../images/logos/logo15.jpg";
-
+import { motion } from "framer-motion"
 import "./ClientPage.css";
 
 class ClientPage extends Component {
@@ -27,7 +27,14 @@ class ClientPage extends Component {
     ];
     return (
       <div className="client-page">
-        <h1>Our Trusted Clients</h1>
+        <motion.h1
+          whileHover={{
+            scale: 1.1,
+            TextShadow: "0px 0px 8px rgb(255,255,255)"
+          }}
+          data-aos="fade-up"
+          data-aos-duration="2000" 
+        >Our Trusted Clients</motion.h1>
         <div className="carousel">
           <Carousel
             additionalTransfrom={0}
@@ -80,46 +87,94 @@ class ClientPage extends Component {
             slidesToSlide={1}
             swipeable
           >
-            <div className="box big">
+            <motion.div className="box big" 
+              whileHover={{
+                scale: 1.1
+              }}
+            >
               <img src={logo2} />
-            </div>
-            <div className="box">
+            </motion.div>
+            <motion.div className="box" 
+              whileHover={{
+                scale: 1.1
+              }}
+            >
               <img src={logo15} />
-            </div>
-            <div className="box">
+            </motion.div>
+            <motion.div className="box"
+              whileHover={{
+                scale: 1.1
+              }}
+            >
               <img src={logo3} />
-            </div>
-            <div className="box">
+            </motion.div>
+            <motion.div className="box"
+              whileHover={{
+                scale: 1.1
+              }}
+            >
               <img src={logo4} />
-            </div>
+            </motion.div>
             {/* <div className="box">
               <img src={logo5} />
             </div> */}
-            <div className="box">
+            <motion.div className="box"
+              whileHover={{
+                scale: 1.1
+              }}
+            >
               <img src={logo6} />
-            </div>
-            <div className="box">
+            </motion.div>
+            <motion.div className="box"
+              whileHover={{
+                scale: 1.1
+              }}
+            >
               <img src={logo7} />
-            </div>
-            <div className="box height">
+            </motion.div>
+            <motion.div className="box height"
+              whileHover={{
+                scale: 1.1
+              }}
+            >
               <img src={logo11} />
-            </div>
-            <div className="box">
+            </motion.div>
+            <motion.div className="box"
+              whileHover={{
+                scale: 1.1
+              }}
+            >
               <img src={logo8} />
-            </div>
-            <div className="box big">
+            </motion.div>
+            <motion.div className="box big"
+              whileHover={{
+                scale: 1.1
+              }}
+            >
               <img src={logo1} />
-            </div>
-            <div className="box">
+            </motion.div>
+            <motion.div className="box"
+              whileHover={{
+                scale: 1.1
+              }}
+            >
               <img src={logo9} />
-            </div>
-            <div className="box">
+            </motion.div>
+            <motion.div className="box"
+              whileHover={{
+                scale: 1.1
+              }}
+            >
               <img src={logo10} />
-            </div>
+            </motion.div>
 
-            <div className="box heigth">
+            <motion.div className="box heigth"
+              whileHover={{
+                scale: 1.1
+              }}
+            >
               <img src={logo12} />
-            </div>
+            </motion.div>
           </Carousel>
         </div>
       </div>

@@ -2,6 +2,8 @@ import React from 'react'
 import financialconsulting from "../../../images/services-home-tab/financial-consulting.jpg"
 import "./ServicesHomeTabComponents.css"
 import { Link } from 'react-router-dom'
+import { motion } from "framer-motion"
+
 
 
 function FinancialConsulting() {
@@ -16,7 +18,11 @@ function FinancialConsulting() {
                     <div class="col-md-12 col-sm-12">
                         <div class="counter">
                             <div class="counter-content">
-                                <h3>Financial Consulting</h3>
+                                <motion.h3
+                                    initial={{x: "-100vw"}}
+                                    animate={{x: 0}}
+                                    transition={{delay: 0.3, type: 'spring', stiffness: 120}}
+                                >Financial Consulting</motion.h3>
                             </div>
                         </div>
                     </div>
@@ -31,19 +37,19 @@ function FinancialConsulting() {
                         <img src={financialconsulting} style={{width: "100%", height: "100%"}}/>
                     </div>
                     <div>
-                        <p>Ittechnica draws on profound experience across industries to assist financial services institutions in each region to discover progressive approaches to optimize techniques, reduce back-office costs, align IT, oversee chances, capture the economic benefits of building steadfast clients, and plan for evolving competitive and administrative landscapes. Ittechnica’s committed financial services teams all predominant sectors of the industry. Financial administration players should tackle better plans of action to conquer the shortcomings of the past and modern challenges.</p>
-                        <p>Ittechnica has deep expertise in financial services, but we additionally look beyond the industry and draw upon our abilities revel in. We tailor these contributions to the necessities of our monetary services clients  to assist them with tackling issues or seek after circumstances in numerous zones, including:</p>
+                        <p >Ittechnica draws on profound experience across industries to assist financial services institutions in each region to discover progressive approaches to optimize techniques, reduce back-office costs, align IT, oversee chances, capture the economic benefits of building steadfast clients, and plan for evolving competitive and administrative landscapes. Ittechnica’s committed financial services teams all predominant sectors of the industry. Financial administration players should tackle better plans of action to conquer the shortcomings of the past and modern challenges.</p>
+                        <p data-aos="fade-up">Ittechnica has deep expertise in financial services, but we additionally look beyond the industry and draw upon our abilities revel in. We tailor these contributions to the necessities of our monetary services clients  to assist them with tackling issues or seek after circumstances in numerous zones, including:</p>
                         <div>
-                            <p><i class="fas fa-circle"></i>Growth approach</p>
-                            <p><i class="fas fa-circle"></i>Operational excellence</p>
-                            <p><i class="fas fa-circle"></i>Compliance</p>
-                            <p><i class="fas fa-circle"></i>Data innovation</p>
-                            <p><i class="fas fa-circle"></i>Change control</p>
-                            <p><i class="fas fa-circle"></i>Execution improvement</p>
-                            <p><i class="fas fa-circle"></i>Client experience</p>
-                            <p><i class="fas fa-circle"></i>Customer loyalty and insights</p>
+                            <p data-aos="fade-up"><i class="fas fa-circle"></i>Growth approach</p>
+                            <p data-aos="fade-up"><i class="fas fa-circle"></i>Operational excellence</p>
+                            <p data-aos="fade-up"><i class="fas fa-circle"></i>Compliance</p>
+                            <p data-aos="fade-up"><i class="fas fa-circle"></i>Data innovation</p>
+                            <p data-aos="fade-up"><i class="fas fa-circle"></i>Change control</p>
+                            <p data-aos="fade-up"><i class="fas fa-circle"></i>Execution improvement</p>
+                            <p data-aos="fade-up"><i class="fas fa-circle"></i>Client experience</p>
+                            <p data-aos="fade-up"><i class="fas fa-circle"></i>Customer loyalty and insights</p>
                         </div>
-                        <p>We work with our financial services clients as partners. Together we develop clear, practical action plans, and support or run the implementation of those plans to ensure real and sustainable performance improvement. We have worked with leading financial services companies in many strategic and operational areas.</p>
+                        <p data-aos="fade-up">We work with our financial services clients as partners. Together we develop clear, practical action plans, and support or run the implementation of those plans to ensure real and sustainable performance improvement. We have worked with leading financial services companies in many strategic and operational areas.</p>
                     </div>
                 </div>
                 <div className="services-otherservices-links">

@@ -1,13 +1,18 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import softwaredelivery from "../../images/softwaredeliverycontent.jpeg";
+import { motion } from "framer-motion"
 
 class SoftwareDelivery extends Component {
   render() {
     return (
       <div className="software-delivery">
         <div>
-          <h1>Software Delivery</h1>
+          <motion.h1
+            initial={{x: "-100vw"}}
+            animate={{x: 0}}
+            transition={{delay: 0.3, type: 'spring', stiffness: 200}}
+          >Software Delivery</motion.h1>
           <div className="agile-link">
             <ul>
               <li>
@@ -31,7 +36,7 @@ class SoftwareDelivery extends Component {
               <img src={softwaredelivery} />
             </div>
             <div>
-              <p>
+              <p data-aos="fade-up">
                 Ittechnica business is delivering fully automated Development,
                 Security and Operations (DevSecOps) software development
                 environments using modern Agile methods, techniques and
@@ -42,14 +47,14 @@ class SoftwareDelivery extends Component {
                 implementations that ensures our customers reap the benefits of
                 timely, efficient, and cost-effective business automation.
               </p>
-              <h3>Agile Application Development:</h3>
-              <p>
+              <h3 data-aos="fade-up">Agile Application Development:</h3>
+              <p data-aos="fade-up">
                 The integration of DevSecOps is a paradigm that reduces risk and
                 increases efficiency with real-time dashboards that provide
                 metrics for program progress. This is accomplished by using our
                 proven methodology of:
               </p>
-              <p>
+              <p data-aos="fade-up">
                 <span>
                   Continuous Integration/Continuous Deployment (CI/CD):
                 </span>
@@ -57,18 +62,18 @@ class SoftwareDelivery extends Component {
                 that automatically compiles, tests, and secures software before
                 it is deployed into production.
               </p>
-              <p>
+              <p data-aos="fade-up">
                 <span>Automated Testing:</span> We enforce Test Driven
                 Development that requires all software to be tested through
                 automation pipelines requiring all test cases to pass before any
                 code is deployed.
               </p>
-              <p>
+              <p data-aos="fade-up">
                 <span>Incremental Modernization: </span> Incrementally replace
                 specific pieces of functionality within legacy systems with new
                 applications and micro-services.
               </p>
-              <p>
+              <p data-aos="fade-up">
                 <span>Cyber Security: </span> Deploy security as code by using
                 the latest DevSecOps automation tools available.  This imbedded
                 security culture enables development teams to implement modern
@@ -77,8 +82,8 @@ class SoftwareDelivery extends Component {
                 of new threats.
               </p>
 
-              <h3>Agile Management:</h3>
-              <p>
+              <h3 data-aos="fade-up">Agile Management:</h3>
+              <p data-aos="fade-up">
                 Agile Management is a project methodology which uses short
                 development cycles to focus on continuous improvement in the
                 development of product or a service. It promotes collaborative
@@ -88,14 +93,14 @@ class SoftwareDelivery extends Component {
                 few steps which we follow: Agile Analytics, Agile performance
                 Management, Lean Portfolio Management
               </p>
-              <p>
+              <p data-aos="fade-up">
                 Deliver Quality at Speed’ is the success mantra in the current
                 highly-competitive digital business world. Below are the 10
                 reasons for embracing agile software delivery
               </p>
               <div className="software-delivery-list-item">
                 <ul>
-                  <li>
+                  <li data-aos="fade-up">
                     <p>
                       Accelerate Product Delivery: Agile development approach
                       involving shorter sprints is gaining momentum to keep up
@@ -103,7 +108,7 @@ class SoftwareDelivery extends Component {
                       business goals.
                     </p>
                   </li>
-                  <li>
+                  <li data-aos="fade-up">
                     <p>
                       Enhance ability to manage changing priorities: Agile
                       approach for software development requires not only teams
@@ -113,7 +118,7 @@ class SoftwareDelivery extends Component {
                       an agaile approach at every step plays a key role.
                     </p>
                   </li>
-                  <li>
+                  <li data-aos="fade-up">
                     <p>
                       Increase productivity: The agile approach enables
                       increased productivity through more effective
@@ -121,14 +126,14 @@ class SoftwareDelivery extends Component {
                       ever-changing customer demands.
                     </p>
                   </li>
-                  <li>
+                  <li data-aos="fade-up">
                     <p>
                       Enhance software quality: Agile techniques evaluate and
                       enhance the software quality while offering increased
                       customer value.
                     </p>
                   </li>
-                  <li>
+                  <li data-aos="fade-up">
                     <p>
                       Enhance delivery predictability: Clients usually care
                       about predictability. With the help of agile approach for
@@ -138,14 +143,14 @@ class SoftwareDelivery extends Component {
                       commitment.
                     </p>
                   </li>
-                  <li>
+                  <li data-aos="fade-up">
                     <p>
                       Improve business/IT alignment: Organizations must focus on
                       IT to implement the right systems in the right way to meet
                       the business needs. 
                     </p>
                   </li>
-                  <li>
+                  <li data-aos="fade-up">
                     <p>
                       Improve project visibility: Visibility is the key to adapt
                       quickly to the needed change. In the absence of project
@@ -155,7 +160,7 @@ class SoftwareDelivery extends Component {
                       customer value early and often.
                     </p>
                   </li>
-                  <li>
+                  <li data-aos="fade-up">
                     <p>
                       Reduce project risk:  Software development in sprints
                       includes agile techniques such as sprint review, the
@@ -164,7 +169,7 @@ class SoftwareDelivery extends Component {
                       expectations and the completed 
                     </p>
                   </li>
-                  <li>
+                  <li data-aos="fade-up">
                     <p>
                       Improve team morale: <u>Agile approach</u> demands an
                       organization to listen to its employees, communicate its
@@ -172,7 +177,7 @@ class SoftwareDelivery extends Component {
                       recognize employees for their efforts and accomplishments.
                     </p>
                   </li>
-                  <li>
+                  <li data-aos="fade-up">
                     <p>
                       Improve engineering discipline: A good design, perfect
                       configuration management, and effective <u>testing</u>

@@ -154,6 +154,10 @@
 }
 
 @media (max-width: 750px) {
+  .we-are-best {
+    position: relative;
+  }
+
   .we-are-best > div > div div:nth-child(1) {
     font-size: 25px;
   }

@@ -9,6 +9,7 @@ import terraform from "../../../images/cybersecuritylogo.jpeg";
 import technology from "../../../images/agilelogo.jpeg";
 import cloud from "../../../images/softwaredeliverylogo.jpeg";
 import microsoft from "../../../images/digitalservicelogo.jpeg";
+import { motion } from "framer-motion"
 
 class Services extends Component {
   render() {
@@ -69,7 +70,12 @@ class Services extends Component {
             {/* <div class="row"> */}
             <Slider {...settings}>
               <div className="">
-                <div className="serviceBox">
+                <motion.div className="serviceBox"
+                  whileHover={{
+                    scale: 1.1
+                  }} 
+                  data-aos="fade-up"
+                >
                   <Link to="agiletransformation">
                     <div className="service-icon">
                       <span>
@@ -84,10 +90,16 @@ class Services extends Component {
                     applications and customized solutions that enable
                     organizations to be smarter and faster.
                   </p>
-                </div>
+                </motion.div>
               </div>
               <div className="">
-                <div className="serviceBox blue">
+                <motion.div className="serviceBox blue"
+                  whileHover={{
+                    scale: 1.1
+                  }}
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
                   <Link to="/softwaredelivery">
                     <div className="service-icon">
                       <span>
@@ -101,10 +113,16 @@ class Services extends Component {
                     Combining Deep Expertise In OpenStack, databases and data
                     processing with analytics solutions.
                   </p>
-                </div>
+                </motion.div>
               </div>
               <div className="">
-                <div className="serviceBox">
+                <motion.div className="serviceBox"
+                  whileHover={{
+                    scale: 1.1
+                  }}
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                >
                   <Link to="/cybersecurity">
                     <div className="service-icon">
                       <span>
@@ -119,10 +137,16 @@ class Services extends Component {
                     significant experience to deliver on the promise of SAP
                     applications.
                   </p>
-                </div>
+                </motion.div>
               </div>
               <div className="">
-                <div className="serviceBox blue">
+                <motion.div className="serviceBox blue"
+                  whileHover={{
+                    scale: 1.1
+                  }} 
+                  data-aos="fade-up"
+                  data-aos-duration="3000"
+                >
                   <Link to="/digitalservices">
                     <div className="service-icon">
                       <span>
@@ -137,7 +161,7 @@ class Services extends Component {
                     of Microsoft tools and can deliver competent Custom
                     Development Solutions and Data Management Solutions.
                   </p>
-                </div>
+                </motion.div>
               </div>
               {/* <div className="">
                 <div className="serviceBox">

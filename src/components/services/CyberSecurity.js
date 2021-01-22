@@ -1,13 +1,18 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import cybersecurity from "../../images/cybersecuritycontent.jpeg";
+import { motion } from "framer-motion"
 
 class CyberSecurity extends Component {
   render() {
     return (
       <div className="cyber-security">
         <div>
-          <h1>Cyber Security</h1>
+          <motion.h1
+            initial={{x: "-100vw"}}
+            animate={{x: 0}}
+            transition={{delay: 0.3, type: 'spring', stiffness: 200}}
+          >Cyber Security</motion.h1>
           <div className="agile-link">
             <ul>
               <li>
@@ -31,7 +36,7 @@ class CyberSecurity extends Component {
               <img src={cybersecurity} />
             </div>
             <div>
-              <p align="justify">
+              <p align="justify"  data-aos="fade-up">
                 Cyber security is the practice of protecting systems, networks
                 and programs from digital attacks by hackers. Ittechnica
                 provides a wide range of advanced security solutions that can
@@ -45,34 +50,34 @@ class CyberSecurity extends Component {
               <div>
                 <div className="cyber-security-list-item">
                   <ol>
-                    <li>
+                    <li data-aos="fade-up">
                       <p>
                         Upgrade your network security infrastructure, starting
                         with your firewall.
                       </p>
                     </li>
-                    <li>
+                    <li data-aos="fade-up">
                       <p>Perform regular software updates and patches.</p>
                     </li>
-                    <li>
+                    <li data-aos="fade-up">
                       <p>Secure the network edge.</p>
                     </li>
-                    <li>
+                    <li data-aos="fade-up">
                       <p>Improve physical security.</p>
                     </li>
-                    <li>
+                    <li data-aos="fade-up">
                       <p>Implement cyber security awareness training.</p>
                     </li>
-                    <li>
+                    <li data-aos="fade-up">
                       <p>Conduct cyber security risk assessments.</p>
                     </li>
                   </ol>
                 </div>
-                <h3>
+                <h3 data-aos="fade-up">
                   Upgrade Your Network Security Infrastructure, Starting with
                   Your Firewall
                 </h3>
-                <p>
+                <p data-aos="fade-up">
                   Most legacy networks are not equipped to deal with the
                   sophistication and frequency of today’s cyberattacks. Assess
                   your infrastructure thoroughly to determine network security

@@ -60,44 +60,82 @@ class Testimonial extends Component {
         {/* <div className="image">
           <img src={clientpic} />
         </div> */}
-        <div className="testimonial-content">
+        <div className="testimonial-content"
+          data-aos="fade-right"
+        >
           <Slider {...settings}>
             <div>
-              <div>
+              <div
+                data-aos="fade-up"
+                data-aos-duration="500"
+              >
                 <i class="fas fa-quote-left"></i>
-                <p>
+                <p
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
                   Ittechnica continues to be one of our best partners for IT
                   services. They provide high-quality services in a flexible,
                   customer-centric framework. A key critical success factor is the
                   time the account team invests in understanding our business and
                   related needs.
                 </p>
-                <h3>Logan</h3>
-                <h4>Account Manager, TEKsystems</h4>
+                <h3
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                >Logan</h3>
+                <h4
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                >Account Manager, TEKsystems</h4>
               </div>
             </div>
             <div>
-              <div>
+              <div
+                data-aos="fade-up"
+                data-aos-duration="500" 
+              >
                 <i class="fas fa-quote-left"></i>
-                <p>
+                <p
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
                   We developed a great partnership with Ittechnica Inc and their
                   dedication towards services is excellent. We appreciate their work
                   and bringing new talents based on our requirements.{" "}
                 </p>
-                <h3>Christina</h3>
-                <h4>Sr. Manager, Verizon</h4>
+                <h3
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                >Christina</h3>
+                <h4
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                >Sr. Manager, Verizon</h4>
               </div>
             </div>
             <div>
-              <div>
+              <div
+                data-aos="fade-up"
+                data-aos-duration="500"
+              >
                 <i class="fas fa-quote-left"></i>
-                <p>
+                <p
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
                   Ittechnica has exceeded our expectations! They guided us through
                   the entire process, from selection, to deployment to help desk
                   support. Excellent service and attention to detail!
                 </p>
-                <h3>Ryan</h3>
-                <h4>Manager, Apex Systems</h4>
+                <h3
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                >Ryan</h3>
+                <h4
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                >Manager, Apex Systems</h4>
               </div>
             </div>
           </Slider>

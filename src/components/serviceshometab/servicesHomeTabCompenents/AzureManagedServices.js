@@ -2,6 +2,7 @@ import React from 'react'
 import azuremanaged from "../../../images/services-home-tab/azure-managed.jpeg"
 import "./ServicesHomeTabComponents.css"
 import { Link } from 'react-router-dom'
+import { motion } from "framer-motion"
 
 function AzureManagedServices() {
     return (
@@ -15,7 +16,11 @@ function AzureManagedServices() {
                     <div class="col-md-12 col-sm-12">
                         <div class="counter">
                             <div class="counter-content">
-                                <h3>Azure Managed Services</h3>
+                                <motion.h3
+                                    initial={{x: "-100vw"}}
+                                    animate={{x: 0}}
+                                    transition={{delay: 0.3, type: 'spring', stiffness: 120}}
+                                >Azure Managed Services</motion.h3>
                             </div>
                         </div>
                     </div>
@@ -31,7 +36,7 @@ function AzureManagedServices() {
                     </div>
                     <div>
                         <p>Microsoft Azure is the most durable Microsoft business product to aid your company in smoothing out various essential activities. It is a fully-stacked and successful cloud-computing platform, adaptable to any  business length and customizable for any motive. Ittechnica has Microsoft-licensed Azure professionals and advisors who survey your business, build up the virtual machines which you want to meet your desires, and streamline your operations through the cloud.</p>
-                        <p>Azure can manage your business applications, security, lively directories, collaborative project files, and numerous different capacities. And this work can be accessed throughout the field by any representative through the cloud. Azure provides a common experience and comfort for your operations.</p>
+                        <p data-aos="fade-up">Azure can manage your business applications, security, lively directories, collaborative project files, and numerous different capacities. And this work can be accessed throughout the field by any representative through the cloud. Azure provides a common experience and comfort for your operations.</p>
                     </div>
                 </div>
                 <div className="services-otherservices-links">

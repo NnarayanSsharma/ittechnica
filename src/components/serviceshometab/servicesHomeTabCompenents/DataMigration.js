@@ -2,6 +2,7 @@ import React from 'react'
 import datamigration from "../../../images/services-home-tab/data-migration.jpeg"
 import "./ServicesHomeTabComponents.css"
 import { Link } from 'react-router-dom'
+import { motion } from "framer-motion"
 
 function DataMigration() {
     return (
@@ -15,7 +16,11 @@ function DataMigration() {
                     <div class="col-md-12 col-sm-12">
                         <div class="counter">
                             <div class="counter-content">
-                                <h3>Data Migration</h3>
+                                <motion.h3
+                                    initial={{x: "-100vw"}}
+                                    animate={{x: 0}}
+                                    transition={{delay: 0.3, type: 'spring', stiffness: 120}}
+                                >Data Migration</motion.h3>
                             </div>
                         </div>
                     </div>
@@ -31,8 +36,8 @@ function DataMigration() {
                     </div>
                     <div>
                         <p>Data Migration is the process of transferring data from one system to another while changing the storage, database, or application. It should be a key consideration for any system implementation, rise, or consolidation. In an ideal world, it would be performed programmatically to make an automated migration. The fact is that Ittechnica experts play the most important role in this process when it is business or time-critical.</p>
-                        <p>Ittechnica can take care of the entire migration process from strategy, development, documents, and content. Our experience has shown that these are important parts of the success of the project. These aspects usually require collaboration among different groups, while always maintaining the branding and message consistency across sites - which can impact the  workload required.</p>
-                        <p>Data migration must be scoped with the initial brief and estimated to identify what technology is required, as this will reduce developers' work and provide the correct resources to be allocated. Before we put together a data migration strategy for your business, Ittechnica we will take the time to assess what your company truly needs to have a successful migration.</p>
+                        <p data-aos="fade-up">Ittechnica can take care of the entire migration process from strategy, development, documents, and content. Our experience has shown that these are important parts of the success of the project. These aspects usually require collaboration among different groups, while always maintaining the branding and message consistency across sites - which can impact the  workload required.</p>
+                        <p data-aos="fade-up">Data migration must be scoped with the initial brief and estimated to identify what technology is required, as this will reduce developers' work and provide the correct resources to be allocated. Before we put together a data migration strategy for your business, Ittechnica we will take the time to assess what your company truly needs to have a successful migration.</p>
                     </div>
                 </div>
                 <div className="services-otherservices-links">

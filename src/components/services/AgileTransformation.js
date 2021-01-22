@@ -3,6 +3,7 @@ import "./WhatWeDo.css";
 import { Link } from "react-router-dom";
 import agileimg from "../../images/agile1.jpeg";
 import axios from "axios"
+import { motion } from "framer-motion"
 
 class AgileTransformation extends Component {
   // componentDidMount(){
@@ -23,7 +24,11 @@ class AgileTransformation extends Component {
     return (
       <div className="agile-transformation">
         <div>
-          <h1>Agile Transformation</h1>
+          <motion.h1
+            initial={{x: "-100vw"}}
+            animate={{x: 0}}
+            transition={{delay: 0.3, type: 'spring', stiffness: 200}}
+          >Agile Transformation</motion.h1>
           <div className="agile-link">
             <ul>
               <li>
@@ -47,7 +52,7 @@ class AgileTransformation extends Component {
               <img src={agileimg} />
             </div>
             <div>
-              <p>
+              <p data-aos="fade-up">
                 Agile Transformation is the continuous process of refactoring
                 organization to achieve full benefits of agility. For any
                 business to succeed in today’s market they must be able to
@@ -55,34 +60,34 @@ class AgileTransformation extends Component {
                 More importantly, they need to be quick and able to respond to
                 feedback from customers.
               </p>
-              <h3>AGILE TRANSFORMATION STRATEGY:</h3>
-              <p>
+              <h3 data-aos="fade-up">AGILE TRANSFORMATION STRATEGY:</h3>
+              <p data-aos="fade-up">
                 The strategy for an Agile Transformation comes from knowing
                 where your organization is today and where you need to go across
                 wide range of roles such as, workflow processes, product
                 performance, understanding of your market and customers, {" "}
               </p>
-              <p>“Transformation can be planned, managed, and measured."</p>
-              <p>
+              <p data-aos="fade-up">“Transformation can be planned, managed, and measured."</p>
+              <p data-aos="fade-up">
                 The key is to understand the right way to plan so that business
                 value is delivered at regular increments in the Transformation.
                 The goal is to transform the way you work.
               </p>
-              <h3>STEPS TO AN AGILE TRANSFORMATION:</h3>
-              <p>
+              <h3 data-aos="fade-up">STEPS TO AN AGILE TRANSFORMATION:</h3>
+              <p data-aos="fade-up">
                 We perform agile transformation in four main areas – Culture,
                 Organizational, Process, and Technical – because implementing
                 transformations at all levels of an organization is the most
                 effective way to bring long lasting change.
               </p>
-              <p>
+              <p data-aos="fade-up">
                 Strategy for the goals set in the process will be achieved by
                 the near-term goals and work based on that. While working on
                 that we need to consider:
               </p>
               <div className="agile-list-item">
                 <ul>
-                  <li>
+                  <li data-aos="fade-up">
                     <p>Build a leadership Coalition:</p>
                     <p>
                       Agile Transformation requires changes to every part of the
@@ -91,7 +96,7 @@ class AgileTransformation extends Component {
                       know what is going to happen
                     </p>
                   </li>
-                  <li>
+                  <li data-aos="fade-up">
                     <p>Define and end state vision:</p>
                     <p>
                       Basic idea is needed before we start the process to make
@@ -99,7 +104,7 @@ class AgileTransformation extends Component {
                       this might change.
                     </p>
                   </li>
-                  <li>
+                  <li data-aos="fade-up">
                     <p>Timeline for each milestone:</p>
                     <p>
                       We need to periodically assess the progress of the
@@ -107,7 +112,7 @@ class AgileTransformation extends Component {
                       milestone in the scheduled timeline.
                     </p>
                   </li>
-                  <li>
+                  <li data-aos="fade-up">
                     <p>Build a transformation roadmap:</p>
                     <p>
                       We have to give the basic idea to organization of what
@@ -115,14 +120,14 @@ class AgileTransformation extends Component {
                       benefits we expect to achieve from the investment.
                     </p>
                   </li>
-                  <li>
+                  <li data-aos="fade-up">
                     <p>Technology will help to achieve your goals: </p>
                     <p>
                       We need to choose the right technology to help us achieve
                       the goals in the right way.
                     </p>
                   </li>
-                  <li>
+                  <li data-aos="fade-up">
                     <p>Adapt and Learn:</p>
                     <p>
                       Re-assess the end-state vision based upon how our
@@ -130,7 +135,7 @@ class AgileTransformation extends Component {
                       Transformation.
                     </p>
                   </li>
-                  <li>
+                  <li data-aos="fade-up">
                     <p>Manage Communication:</p>
                     <p>
                       Transparent communication about progress and impediments
@@ -140,22 +145,22 @@ class AgileTransformation extends Component {
                   </li>
                 </ul>
               </div>
-              <h3>AGILE TRANSFORMATION ROADMAP:</h3>
-              <p className="agile-roadmap">
+              <h3 data-aos="fade-up">AGILE TRANSFORMATION ROADMAP:</h3>
+              <p className="agile-roadmap" data-aos="fade-up">
                 For a large complex organization to successfully Transform, a
                 Transformation roadmap is essential. Transformation will have
                 several common features:
               </p>
-              <p>Analysis of where the organization is today</p>
-              <p>
+              <p data-aos="fade-up">Analysis of where the organization is today</p>
+              <p data-aos="fade-up">
                 Discovery of where the organization would like to be at some
                 point in the future
               </p>
-              <p>Vision to guide the transformation</p>
-              <p>Governance for the initiation</p>
-              <p>Communication Strategy</p>
-              <p>Change management strategy</p>
-              <p>High level-plan</p>
+              <p data-aos="fade-up">Vision to guide the transformation</p>
+              <p data-aos="fade-up">Governance for the initiation</p>
+              <p data-aos="fade-up">Communication Strategy</p>
+              <p data-aos="fade-up">Change management strategy</p>
+              <p data-aos="fade-up">High level-plan</p>
             </div>
           </div>
           {/* <div className="agile-link">

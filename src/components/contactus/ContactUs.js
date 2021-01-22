@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import "./ContactUs.css"
 import GoogleMapOpenLayer from './GoogleMapOpenLayer';
+import { motion } from "framer-motion"
+
 
 export class ContactUs extends Component {
     render() {
@@ -9,7 +11,11 @@ export class ContactUs extends Component {
             <div className="contact-us">
                 <div>
                     <div>
-                        <h1>Talk To Us</h1>
+                        <motion.h1
+                            initial={{x: "-100vw"}}
+                            animate={{x: 0}}
+                            transition={{delay: 0.3, type: 'spring', stiffness: 300}}
+                        >Talk To Us</motion.h1>
                     </div>
                     <div>
                         <h2>

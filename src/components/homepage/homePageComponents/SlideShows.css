@@ -42,6 +42,7 @@
 .video video {
   min-width: 100%;
   min-height: 100%;
+  object-fit: cover;
 }
 
 .overlay {
@@ -89,6 +90,32 @@
 }
 
 .content-box p {
+  font-size: 2.8rem;
+  margin-bottom: 0;
+  /* font-family: "Fondamento", cursive; */
+  font-family: "Galada", cursive;
+  letter-spacing: 2px;
+}
+
+.slide-show > div > div {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* .slide-show > div > div video {
+  width: 100vw;
+  height: 100%;
+} */
+
+.content-box1 {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  color: #fff;
+}
+
+.content-box1 p {
   font-size: 2.8rem;
   margin-bottom: 0;
   /* font-family: "Fondamento", cursive; */

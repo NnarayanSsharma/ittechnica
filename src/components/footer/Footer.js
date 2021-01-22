@@ -8,7 +8,9 @@ class Footer extends Component {
     return (
       <div className="footer-container">
         <div className="footer">
-          <div className="div-1">
+          <div className="div-1"
+            data-aos="fade-right"
+          >
             <div>
               <h2>
                 ITTECHNICA

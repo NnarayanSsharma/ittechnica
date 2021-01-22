@@ -2,6 +2,8 @@ import React from 'react'
 import operation from "../../../images/services-home-tab/operation.jpeg"
 import "./ServicesHomeTabComponents.css"
 import { Link } from 'react-router-dom'
+import { motion } from "framer-motion"
+
 
 function Operation() {
     return (
@@ -15,7 +17,11 @@ function Operation() {
                     <div class="col-md-12 col-sm-12">
                         <div class="counter">
                             <div class="counter-content">
-                                <h3>Operation</h3>
+                                <motion.h3
+                                    initial={{x: "-100vw"}}
+                                    animate={{x: 0}}
+                                    transition={{delay: 0.3, type: 'spring', stiffness: 120}}
+                                >Operation</motion.h3>
                             </div>
                         </div>
                     </div>
@@ -31,8 +37,8 @@ function Operation() {
                     </div>
                     <div>
                         <p>Operations are the work of managing the inner workings of your business so it runs as efficiently as possible. Whether you make products, sell products, or provide services, every small business owner has to oversee the design and management of behind-the-scenes work.</p>
-                        <p>Improving operations means thinking strategically about your systems and processes. Other times, it means being part of the on-the-ground work to bring every aspect of a project, from tiny to huge, to reality.</p>
-                        <p>Organizational Operations focus on improving the performance of all aspects that support the organization’s structure; including organization design, governance (across functions and departments), roles and responsibilities, and employee performance. Typical activities relate either to the implementation of organizational strategies, such as workforce optimization or the redesign of employee roles or are prompted by an event or crisis, such as a merger or a transition as part of a broader corporate restructuring effort.</p>
+                        <p data-aos="fade-up">Improving operations means thinking strategically about your systems and processes. Other times, it means being part of the on-the-ground work to bring every aspect of a project, from tiny to huge, to reality.</p>
+                        <p data-aos="fade-up">Organizational Operations focus on improving the performance of all aspects that support the organization’s structure; including organization design, governance (across functions and departments), roles and responsibilities, and employee performance. Typical activities relate either to the implementation of organizational strategies, such as workforce optimization or the redesign of employee roles or are prompted by an event or crisis, such as a merger or a transition as part of a broader corporate restructuring effort.</p>
 
                     </div>
                 </div>

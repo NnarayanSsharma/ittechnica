@@ -41,9 +41,9 @@ export class GoogleMapOpenLayer extends Component {
               })
             ],
             view: new View({
-            //   center: [32.873600, -96.971910],
-            center: [32.8140, -96.9489],
-                // center: [0,0],
+              // center: [32.873600, -96.971910],
+              center: [32.8140, -96.9489],
+              // center: [0,0],
               zoom: 3
             })
           });

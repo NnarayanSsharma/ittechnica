@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import digitalservices from "../../images/digitalservicecontent.jpeg";
+import { motion } from "framer-motion"
 
 import "./WhatWeDo.css";
 
@@ -9,7 +10,11 @@ class DigitalServices extends Component {
     return (
       <div className="digital-services">
         <div>
-          <h1>DigitalServices</h1>
+          <motion.h1
+            initial={{x: "-100vw"}}
+            animate={{x: 0}}
+            transition={{delay: 0.3, type: 'spring', stiffness: 200}}
+          >DigitalServices</motion.h1>
           <div className="agile-link">
             <ul>
               <li>
@@ -33,18 +38,18 @@ class DigitalServices extends Component {
               <img src={digitalservices} />
             </div>
             <div>
-              <p>
+              <p data-aos="fade-up">
                 Ittechnica help to refine our customer journey, understand our
                 customer attribution data, automate marketing operations, and
                 build technical solutions that allow you to work better and
                 faster through agile delivery methods.
               </p>
-              <p>
+              <p data-aos="fade-up">
                 We fuse startup thinking and agile methods to help established
                 companies and the public sector increase their customer value,
                 drive operational effectiveness and thrive in an evolving world.
               </p>
-              <p>
+              <p data-aos="fade-up">
                 We bring a startup mindset and agile methods to both established
                 companies and the public sector to unlock value in ways that
                 delight our customers and improve their operational

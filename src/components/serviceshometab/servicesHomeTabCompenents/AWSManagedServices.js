@@ -2,6 +2,8 @@ import React from 'react'
 import awsservices from "../../../images/services-home-tab/aws-services.jpeg"
 import "./ServicesHomeTabComponents.css"
 import { Link } from 'react-router-dom'
+import { motion } from "framer-motion"
+
 
 function AWSManagedServices() {
     return (
@@ -15,7 +17,11 @@ function AWSManagedServices() {
                     <div class="col-md-12 col-sm-12">
                         <div class="counter">
                             <div class="counter-content">
-                                <h3>AWS Managed Services</h3>
+                                <motion.h3
+                                    initial={{x: "-100vw"}}
+                                    animate={{x: 0}}
+                                    transition={{delay: 0.3, type: 'spring', stiffness: 120}}
+                                >AWS Managed Services</motion.h3>
                             </div>
                         </div>
                     </div>
@@ -31,11 +37,11 @@ function AWSManagedServices() {
                     </div>
                     <div>
                         <p>AWS Managed Services is a set of services and gear that automate infrastructure management obligations for Amazon Web Services (AWS) deployments. Ittechnica focuses on assistance that gives a streamlined method to relocate on-premises workloads to the public cloud after, which control the one's workloads after migration.</p>
-                        <p>AWS managed services permit Ittechnica to automate cloud management responsibilities, which include patch control, Change Management, provisioning, client access to the board, incident tracking, and reinforcement and reestablishes.AWS Managed Services provides a dedicated Cloud Service Delivery Manager and Enterprise-level AWS Support coverage.</p>
+                        <p data-aos="fade-up">AWS managed services permit Ittechnica to automate cloud management responsibilities, which include patch control, Change Management, provisioning, client access to the board, incident tracking, and reinforcement and reestablishes.AWS Managed Services provides a dedicated Cloud Service Delivery Manager and Enterprise-level AWS Support coverage.</p>
                         <div>
-                            <p>Ittechnica follows a sequence of steps:</p>
-                            <p><span>(1)</span>referred to as the AWS Managed Services Jumpstart method.</p>
-                            <p><span>(2)</span>To utilize the service. Part of this technique consists of a strategic planning stage, choosing the applications so one can migrate to the public cloud, after which access the AWS controlled services platform.</p>
+                            <p data-aos="fade-up">Ittechnica follows a sequence of steps:</p>
+                            <p data-aos="fade-up"><span>(1)</span>referred to as the AWS Managed Services Jumpstart method.</p>
+                            <p data-aos="fade-up"><span>(2)</span>To utilize the service. Part of this technique consists of a strategic planning stage, choosing the applications so one can migrate to the public cloud, after which access the AWS controlled services platform.</p>
 
                         </div>
                     </div>
